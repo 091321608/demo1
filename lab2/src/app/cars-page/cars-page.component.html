@@ -1,0 +1,10 @@
+
+<input type="text" [(ngModel)] = "FilterCar" class="input-group-text" >
+
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let car of cars | carsFilter: FilterCar; let i=index">
+    <i> {{i+1}} </i>
+    <b> {{car.model}} </b>
+
+  </li>
+</ul>
